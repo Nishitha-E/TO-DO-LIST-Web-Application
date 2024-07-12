@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header> TO DO LIST
+        <nav>
+            <ul>
+                <li><a href="Todo.html">Home</a></li>
+                <li><a href="main">Contacts</a></li>
+                <li><a href="main">Sign In</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="new-task">
+            <input id="new-task-input" type="text" placeholder="Add a new task">
+            <select id="priority-selector">
+                <option value="1">High</option>
+                <option value="2">Medium</option>
+                <option value="3">Low</option>
+            </select>
+            <button id="add-task-button">Add Task</button>
+        </div>
+        <div id="task-list">
+            <!-- Dynamic tasks will be added here -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
